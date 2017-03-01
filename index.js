@@ -21,10 +21,13 @@ updateDocumentTitle(titleText);
   let navInsert = document.createElement('nav');
   document.body.appendChild(navInsert);
 
-  let nav = document.querySelector('nav').className = "nav";
+  let nav = document.querySelector('nav');
+  nav.className = 'nav';
 
-  let ulInsert = document.createElement('ul');
-  document.body.appendChild(ulInsert);
+  let ulCreate = document.createElement('ul');
+  nav.appendChild(ulCreate);
+
+  let ul = document.querySelector('ul');
 
   function createListItems(items) {
     for (let i = 0; i <= items; i++ ) {
@@ -32,7 +35,7 @@ updateDocumentTitle(titleText);
           liContent = document.createTextNode(i.toString());
       li.appendChild(liContent);
 
-      document.body.appendChild(li);
+      ul.appendChild(li);
     }
   }
 
