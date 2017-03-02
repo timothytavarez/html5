@@ -25,12 +25,14 @@ updateDocumentTitle(titleText);
 
   let ulInsert = document.createElement('ul');
   document.body.appendChild(ulInsert);
+  
+  let ulSel = document.querySelector('ul');
 
   function createListItems(items) {
     for (let i = 0; i <= items; i++ ) {
       let li = document.createElement('li'),
           liContent = document.createTextNode(i.toString());
-      li.appendChild(liContent);
+      ulSel.li.appendChild(liContent);
 
       document.body.appendChild(li);
     }

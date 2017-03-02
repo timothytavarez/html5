@@ -1,9 +1,13 @@
-body {
+html, body {
   font-family: 'Roboto', sans-serif;
-  color: red; }
+  height: 100%; }
 
 .nav {
   top: 0;
   padding-bottom: 80px; }
+
+.nav-bar {
+  display: flex;
+  justify-content: space-around; }
 
 /*# sourceMappingURL=index.css.map */
