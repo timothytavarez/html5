@@ -24,16 +24,23 @@ updateDocumentTitle(titleText);
   let nav = document.querySelector('nav');
   nav.className = 'nav';
 
+<<<<<<< HEAD
   let ulCreate = document.createElement('ul');
   nav.appendChild(ulCreate);
 
   let ul = document.querySelector('ul');
+=======
+  let ulInsert = document.createElement('ul');
+  document.body.appendChild(ulInsert);
+  
+  let ulSel = document.querySelector('ul');
+>>>>>>> non-js
 
   function createListItems(items) {
     for (let i = 0; i <= items; i++ ) {
       let li = document.createElement('li'),
           liContent = document.createTextNode(i.toString());
-      li.appendChild(liContent);
+      ulSel.li.appendChild(liContent);
 
       ul.appendChild(li);
     }
